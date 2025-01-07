@@ -5,10 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honored one</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="script.js">
 </head>
 
 <body>
+    <nav>
+        <div class="fixed_menu">
+            <h1 class="logo">GSH</h1>
+            <div class="nav_links">
+                <a class="nav_link main_link active" href="#main">Главная</a>
+                <a class="nav_link about_link" href="#about">Обо мне</a>
+                <a class="nav_link skills_link" href="#skills">Навыки</a>
+                <a class="nav_link works_link" href="#works">Работы</a>
+                <a class="nav_link comments_link" href="#comments">Отзывы</a>
+            </div>
+            <div class="mobile_button">
+                <img src="img/mobile_menu.png" width="40">
+            </div>
+            <div class="mobile_menu hide">
+                <div class="mobile_nav">
+                    <div class="mobile_nav_links">
+                        <a class="nav_link" href="#main">Главная</a>
+                        <a class="nav_link" href="#about">Обо мне</a>
+                        <a class="nav_link" href="#skills">Навыки</a>
+                        <a class="nav_link" href="#works">Работы</a>
+                        <a class="nav_link" href="#comments">Отзывы</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <section id="main">
+        <div class="planet">
+            <div class="moving-planet">
+            </div>
+        </div>
         <div class="main-block">
             <img src="img/maskot.png" width="125">
             <div class="main-content">
@@ -20,30 +52,101 @@
                 </p>
             </div>
             <div class="button">
-                <a href="#">Подробнее</a>
+                <a href="#about">Подробнее</a>
             </div>
         </div>
     </section>
 
     <section id="about">
+        <h1 class="title">Обо мне</h1>
         <div class="about-block">
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-title">
+                        Меня зовут Гоша и это вы узнали из заголовка.
+                        Я занимаюсь разработкой сайтов.<br><br>
+                        Мне нравится заниматься внешней и внутренней частями сайта.
+                    </p>
+                    <div class="button">
+                        <a href="#skills">Мои навыки</a>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <p>Где живу: Санкт-Петербург</p>
+                    <p>Возраст: 15</p>
+                    <p>Образование: Ещё учусь в школе</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="skills">
-        <div class="skills-block">
-        </div>
+            <h1 class="title">Навыки</h1>
+            <div class="skills-block">
+                <div class="skills-card">
+                    <p>
+                        Этот сайт я сделал
+                        в рамках обучения школы
+                        Rocket Tech School
+                    </p>
+                    <div class="langueges">
+                        <img src="img/html.png" width = "70">
+                        <img src="img/css.png" width = "70">
+                        <img src="img/js.png" width = "70">
+                    </div>
+                    <div class="button">
+                        <a href="#works">Мои работы</a>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section id="works">
+        <h1 class="title">Работы</h1>
         <div class="works-block">
+            <img src="img/work1.png">
+            <img src="img/work2.png">
+            <img src="img/work3.png">
         </div>
     </section>
 
     <section id="comments">
+        <h1 class="title">ОТЗЫВЫ</h1>
         <div class="comments-block">
+            <div class="comment-card">
+                <img src="img/photo1.png">
+                <h3>Владимир</h3>
+                <p>Основатель Rocket Tech School</p>
+            </div>
+            <div class="comment">
+                <p>
+                    Этот парень изучает веб
+                    разработку всего 5 месяцев,
+                    и уже создает непростые сайты!
+                </p>
+            </div>
+            <div class="comment-card">
+                <img src="img/photo2.png">
+                <h3>Диана</h3>
+                <p>Product Leader Rocket Tech School</p>
+            </div>
+            <div class="comment">
+                <p>
+                    Очень хорошо пишет код.
+                    Отличная оптимизация сайта.
+                    Современно и стильно.
+                </p>
+            </div>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-year">
+            <p>© 2024</p>
+        </div>
+     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
